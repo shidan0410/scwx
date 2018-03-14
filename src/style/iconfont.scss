@@ -1,0 +1,123 @@
+//@font-face {
+//  font-family: 'icomoon';
+//  src:  url('../../fonts/icomoon.eot?v8fp09');
+//  src: url('../../fonts/icomoon.svg?v8fp09#icomoon') format('svg'),
+//  url('../../fonts/icomoon.eot?v8fp09#iefix') format('embedded-opentype'),
+//  url('../../fonts/icomoon.ttf?v8fp09') format('truetype'),
+//  url('../../fonts/icomoon.woff?v8fp09') format('woff');
+//
+//  font-weight: normal;
+//  font-style: normal;
+//}
+//
+//[class^="icon-"], [class*=" icon-"] {
+//  /* use !important to prevent issues with browser extensions that change fonts */
+//  font-family: 'icomoon' !important;
+//  speak: none;
+//  font-style: normal;
+//  font-weight: normal;
+//  font-variant: normal;
+//  text-transform: none;
+//  line-height: 1;
+//
+//  /* Better Font Rendering =========== */
+//  -webkit-font-smoothing: antialiased;
+//  -moz-osx-font-smoothing: grayscale;
+//}
+
+@import "mixin";
+
+
+.icon-main{/*我的*/
+  @include icon-image(1.1rem,1.1rem,"../../assets/icons/home.png");
+}
+.icon-items{/*双创项目*/
+  @include icon-image(1.1rem,1.1rem,"../../assets/icons/project.png");
+}
+.icon-user{/*个人中心*/
+  @include icon-image(1.1rem,1.1rem,"../../assets/icons/user.png");
+}
+.router-link-active{
+  .icon-main{/*我的*/
+    @include icon-image(1.1rem,1.1rem,"../../assets/icons/home-c.png");
+  }
+  .icon-items{/*双创项目*/
+    @include icon-image(1.1rem,1.1rem,"../../assets/icons/project-c.png");
+  }
+  .icon-user{/*个人中心*/
+    @include icon-image(1.1rem,1.1rem,"../../assets/icons/user-c.png");
+  }
+}
+
+.icon-star{/*精选项目*/
+  position: relative;
+  top: .25rem;
+  @include icon-image-block(1.4rem,1.4rem,"../../assets/icons/h-choice.png");
+}
+.icon-arrow {
+  position: relative;
+  top: .6rem;
+  @include icon-image(.9rem,1rem,"../../assets/icons/list-right-arrow.png");
+}
+.icon-arrow-active {
+  position: relative;
+  top: .6rem;
+  @include icon-image(.9rem,1rem,"../../assets/icons/right-arrow-active.png");
+}
+.icon-mark{
+  position: relative;
+  top: .15rem;
+  @include icon-image-block(.8rem,.8rem,"../../assets/icons/mark.png");
+}
+/********************/
+.icon-bind{/*实名绑卡*/
+  @include icon-image-block(.8rem,1.3rem,"../../assets/Rectangle 27@2x.png");
+}
+.icon-sign{/*网银签约*/
+  @include icon-image-block(.8rem,1.3rem,"../../assets/Rectangle 28@2x.png");
+}
+.icon-right{
+  @include icon-image-block(.8rem,1.3rem,"../../assets/Rectangle 29@2x.png");
+}
+.icon-bank{
+  @include icon-image-block(.8rem,1.3rem,"../../assets/Rectangle 29@2x.png");
+}
+/**********************/
+.icon-eyes{
+  @include icon-image-block(1rem,1rem,"../../assets/icons/u-display.png");
+}
+.icon-closeeyes{
+  @include icon-image-block(1rem,1rem,"../../assets/icons/u-notshow.png");
+}
+.icon-search{
+  position: relative;
+  top: 0.2rem;
+  right: -0.3rem;
+  @include icon-image-block(1rem,1rem,"../../assets/icons/icon-search.png");
+}
+.icon-tip{/*公告*/
+  @include icon-image-block(.75rem,1rem,"../../assets/sound.png");
+}
+
+.icon-menu{
+  @include icon-image-block(.9rem,1rem,"../../assets/menu.png");
+}
+
+.icon-address{
+  @include icon-image-block(.75rem,1rem,"../../assets/icon-address.png");
+}
+
+.icon-pwd{
+  @include icon-image-block(1rem,1rem,"../../assets/safe.png");
+}
+
+.icon-phone{
+  @include icon-image-block(.63rem,1rem,"../../assets/icon-phone.png");
+}
+
+.icon-loginPwd{
+  @include icon-image-block(.8rem,1rem,"../../assets/login_password.png");
+}
+.icon-email{
+  @include icon-image-block(.8rem,1rem,"../../assets/email.png");
+}
